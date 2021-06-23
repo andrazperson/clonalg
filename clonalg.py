@@ -40,7 +40,7 @@ def decode(bitstring, search_space, bits_per_param):
         param = param_rev[::-1]
 
         for x in range(len(param)):
-            sum += (1.0 if (param[x] == '1') else 0.0) * (np.power(2.0, float(x)))  # possible error here
+            sum += (1.0 if (param[x] == '1') else 0.0) * (np.power(2.0, float(x)))
 
         min = bounds[0]
         max = bounds[1]
